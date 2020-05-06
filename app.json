@@ -1,0 +1,21 @@
+{
+  "name": "DeezloaderRemixLoLBot",
+  "description": "A tb DeezloaderRemixLoLBot. Powered by Heroku.",
+  "image": "heroku/python",
+  "repository": "https://github.com/default-github-user/DeezloaderRemixLoLBot",
+  "keywords": ["python", "tgapi" ],
+  "env": {
+    "BOT_TOKEN": {
+      "description": "The telegram bot token.",
+      "generator": "BOT_TOKEN"
+    }
+  },
+  "environments": {
+    "test": {
+      "scripts": {
+        "test-setup": "python run.py",
+        "test": "python run.py"
+      }
+    }
+  }
+}
