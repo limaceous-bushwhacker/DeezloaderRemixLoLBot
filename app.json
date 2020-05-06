@@ -7,8 +7,10 @@
   "env": {
     "BOT_TOKEN": {
       "description": "The telegram bot token."
-
-    }
+      },
+    "DEEZER_TOKEN": {
+      "description": "The deezer cookie / token."
+      }
   },
   "environments": {
     "test": {
