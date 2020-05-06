@@ -1,6 +1,6 @@
-# DeezloaderAn0n_bot
+# DeezloaderRemixLoLBot 
 This project has been created for integrate deezloader library in a Telegram bot.
-
+[Deploy to Heroku](https://heroku.com/deploy?template=https://github.com/Default-github-user/DeezloaderRemixLoLBot)
 # Disclaimer
 
 - I am not responsible for the usage of this program by other people.
