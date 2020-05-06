@@ -33,22 +33,17 @@ from telegram import (
 	InlineQueryResultArticle, InputTextMessageContent
 )
 
-config = ConfigParser()
-config.read(ini_file)
 
-try:
-	deezer_token = config['login']['token']
-	bot_token = config['bot']['token']
-	acrcloud_key = config['acrcloud']['key']
-	acrcloud_hash = config['acrcloud']['secret']
-	acrcloud_host = config['acrcloud']['host']
-	version = config['bot_info']['version']
-	creator = config['bot_info']['creator']
-	donation_link = config['bot_info']['donation']
-	group_link = config['bot_info']['group']
-except KeyError:
-	print("Something went wrong with configuration file")
-	exit()
+deezer_token = os.getenv('DEEZER_TOKEN')
+bot_token = os.getenv('BOT_TOKEN')
+acrcloud_key = os.getenv('ARCLOUD_KEY')
+acrcloud_hash = os.getenv('ARCLOUD_SECRET')
+acrcloud_host = os.getenv('ARCLOUD_HOST')
+version = __version__
+creator = __author__
+donation_link = os.getenv('DONATE_LINK')
+group_link = os.getenv('CHAT_LINK')
+
 
 downloa = Login(deezer_token)
 sets = Updater(bot_token, use_context = True)
