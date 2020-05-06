@@ -6,8 +6,8 @@
   "keywords": ["python", "tgapi" ],
   "env": {
     "BOT_TOKEN": {
-      "description": "The telegram bot token.",
-      "generator": "BOT_TOKEN"
+      "description": "The telegram bot token."
+
     }
   },
   "environments": {
